@@ -1,0 +1,172 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing:border-box;
+
+}
+.container{
+    width:80%;
+    margin: 0% auto;
+}
+
+.nav-index{
+    background-color: black;
+    
+
+}
+
+.white-text{
+    color:white;
+}
+
+
+.inline-block{
+    display: inline-block;
+}
+
+.nav-index h1{
+    font-size: 30px;
+
+}
+
+.nav-index ul{
+  width: 46%;
+    margin-left: 45%;
+}
+
+.nav-index a{
+    text-decoration: none;
+}
+
+.nav-index li{
+    padding-left:7% ;
+    font-size: 15p;
+    
+}
+.nav-padding{
+    padding: 1% 0%;
+}
+
+.sans-serif-text{
+    font-family: sans-serif;
+}
+
+.logo2{
+    font-weight: 100;
+    color:rgb(255, 166, 0);
+}
+
+.home{
+    background-image: url(https://p0.piqsels.com/preview/885/574/564/1-wtc-america-architecture-buildings.jpg);
+    background-size: 100% 100% ;
+  /*      background-position-x: right;
+    background-position-y: center;
+    background-position: left bottom;*/
+    height: 668px;
+   
+}
+
+.overlay{
+    background-color: rgb(0 0 0 / 63%);
+    height:100%;
+     padding: 5% 0%;
+}
+
+.description{
+    width: 50%;
+    
+}
+
+.description h1{
+    font-size: 60px;
+    
+}
+
+.margin-bottom{
+    margin-bottom: 6%;
+}
+
+.description h2{
+    font-weight: 100;
+    font-size: 41px;
+}
+
+.home a{
+ text-decoration: none;
+}
+
+.description hr{
+    width: 13%;
+    border: solid 1.8px white;
+}
+.description p{
+    
+}
+
+.description a{
+   
+   
+}
+    
+
+.description h3{
+    border: 3px solid white;
+    padding:3%;
+    width: 24%;
+}
+
+.form-trial{
+    background-color: white;
+    width: 40%;
+    border: solid white 1px;
+    border-radius: 4px;
+    margin-left: 9.6%;
+   
+}
+
+.form-input{
+    padding: 12% 5%;
+}
+
+.form-input input{
+    display: block;
+    margin-bottom: 16%;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+    border-style: solid;
+    border-color: rgb(225 225 225) ;
+    border-width: 0px 0px 3px 0px;
+}
+
+.form-trial button{
+    background-color: rgb(255, 166, 0);
+    color:white;
+    width: 100%;
+    border: solid rgb(255, 166, 0) 0px;
+    border-radius: 2px;
+    padding: 5% 0%;
+    font-weight: bold;
+    font-size: larger;
+    
+}
+
+.form-trial h1{
+    background-color: rgb(225 225 225);
+    
+    padding: 3% 5%;
+    text-align: center;
+}
+
+.form-free{
+    color:rgb(255, 166, 0);
+}
+ #margin-none-bottom{
+    margin-bottom: 0%;
+ }
+
+
+
+
+
+
