@@ -125,11 +125,11 @@ a{
 
 
 button:hover{
-    color: orangered;
+    color: orangered !important;
 }
 
 a:hover{
-    color: orangered;
+    color: orangered !important;
     
 }
 
