@@ -1,0 +1,135 @@
+/*---------------------reset style----------------------*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*----------------------global style----------------------*/
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.text-gray{
+    color:gray;
+}
+
+.text-blue{
+    color:rgb(8, 205, 205) ;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+/*------------------custom style--------------------------*/
+
+.custom{
+    padding: 5% 0%;
+}
+
+.custom-card{
+    width:30%;
+    box-shadow: 0px 0px 2px 5px gray;
+
+    
+}
+
+.custom-card-header i{
+    font-size: x-large;
+    margin-right: 3%;
+    margin-left: 2%;
+    color: black;
+}
+
+.custom-card-header{
+    padding: 2% 3%;
+    font-weight: bold;
+}
+
+#java{
+    color: rgb(8, 205, 205);
+}
+
+.custom-card-img-img{
+    display: block;
+    width: 100%;
+}
+
+.custom-card-overlay{
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100%;
+    position: absolute;
+    top:0;
+    height: 100%;
+    display: none;
+
+}
+
+.custom-card-img a{
+    color: white;
+    font-weight: bold;
+    bottom:20%;
+    left: 10%;
+    position: absolute;
+}
+
+
+.custom-card:hover .custom-card-overlay{
+    display: block;
+}
+
+
+
+.custom-card-img-mini{
+    display:inline-block ;
+    width:30%;
+    border:solid 5px white;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position:absolute;
+    z-index: 5;
+    right:5%;
+    top:calc(61.39px + 172.78px - (92.55px / 2));;
+
+}
+    
+
+.custom-card-details{
+    width:95%;
+    margin:auto;
+
+    padding: 15% 0%;
+}
+.custom-card-details-line{
+    width:13%;
+    border: solid black 3px;
+    margin: 3% 0%;
+}
+
+
+
