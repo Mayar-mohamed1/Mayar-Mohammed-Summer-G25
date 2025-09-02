@@ -1,0 +1,48 @@
+/*---------------reset style----------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*---------------global style----------------*/
+
+
+
+
+/*--------------custom style-----------------*/
+
+.img-bg{
+    width: 100%;
+    height: 399px;
+    background-image: url(https://t3.ftcdn.net/jpg/01/11/47/40/360_F_111474023_0BQqfF2GEkeo8Ou3dkAk1eWie6KQ1AKr.jpg);
+    overflow: hidden;
+}
+
+.img-bg img{
+    background-color: transparent;
+    width: 20%;
+    margin-top: 2%;
+
+    
+
+    animation-name: imgg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    
+   
+}
+
+
+
+@keyframes imgg {
+    0%{
+         margin-left: 0%;
+    }
+    100%{
+        margin-left: 100%;
+    }
+}
