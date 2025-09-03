@@ -17,6 +17,14 @@
 
 
    /*----------------global style------------------*/
+   ::placeholder{
+    color:#98A2B3;
+   }
+
+
+   .text-gray{
+    color: #98A2B3;
+   }
 
    .container{
     width:80%;
@@ -113,6 +121,36 @@
   .width-50{
     width:50%
   }
+
+  .bg-black{
+    background-color: #101828;
+  }
+
+ 
+
+
+
+  
+
+  /*---global2--*/
+   .align-center{
+    align-items: center;
+  }
+
+
+
+  .justify-content-around{
+    justify-content: space-around;
+  }
+
+   .element-end{
+    margin-left: 87%;
+    
+  }
+
+
+
+
 
    /*------------------------custom style--------------------*/
    /*----------------------->nav*/
@@ -250,6 +288,68 @@
     margin-right: 9%;
   }
 
+  /*--------------------------------->section2 shop*/
+  .shop-input{
+    border: none;
+    border-radius: 36px;
+    background-color: #F4F4F4;
+    padding: 1%;
+  }
+
+  .shop-list{
+    width: 40%;
+    margin: auto;
+ 
+
+  }
+
+  .shop-card{
+    width: 32%;
+    border:solid white 0px;
+    border-radius: 50%;
+  }
+
+  .shop-body{
+    padding: 4% 0%;
+
+  }
+
+  .shop-body img{
+    border: solid 0px white;
+    border-radius: 3%;
+  }
+
+  .shop-list-button{
+    background-color: transparent;
+    border: 0px;
+    
+  }
+    .border-gradient{
+    padding: 1%;
+    border:  none;
+    border-radius: 5px;
+    background-color:rgb(0, 0, 55);
+    color: white;
+
+  }
+
+  .shop-list button{
+    padding:10%;
+  }
+
+  .shop-border{
+    border: 0.1px solid black;
+    padding:3%
+  }
+
+  
+
+
+
+
+
+
+
 
   
   /*--------------------------------->section3 services*/
@@ -313,8 +413,8 @@
   .services-body{
     flex-wrap: wrap;
 
-    border-left: solid black 0.2px;
-    border-right:solid black 0.2px;
+    border: 0.1px solid black;
+    padding:3%;
 
     padding-left: 3%;
     padding-right: 3%;
@@ -325,6 +425,62 @@
     width:34%;
   }
   
+  /*----------------------------------->section4 About*/
+  .about-width1{
+  width:50%;
+  }
+  .about-width2{
+  width:45%;
+  }
+
+  
+
+  .about-details p{
+    padding-bottom: 5%;
+  }
+
+  .about-img1{
+    width: 100%;
+    border: solid 0px white;
+    border-radius: 5%;
+
+
+  }
+
+  .about-img2{
+    border-radius: 15px;
+    overflow: hidden;
+    border: 10px solid #fff;
+    z-index: 1;
+    position: absolute;
+    top: 75%;
+    right: 74%;
+    width: 52%;
+
+    
+
+
+
+  }
+
+  .about-img2 img{
+    width:100%;
+  }
+
+  .about-body{
+
+    border: 0.1px solid black;
+    padding:3% ;
+    margin-bottom: 5%;
+
+  }
+
+  .about-images{
+    width: 70%;
+    margin-left:30% ;
+  }
+
+
 
   /*----------------------------------->section5 team*/
 
@@ -361,8 +517,235 @@
     padding-bottom: 5%;
   }
 
+/*------------------------------------>section6 blog*/
+
+.blog-details{
+  width:48%;
+}
+
+.blog-details h1{
+  font-size: xx-large;
+  margin:5% 0%;
+}
+
+#blog-p1{
+  border-top:solid 0.1px rgb(20, 20, 20);
+  padding: 5% 0%;
+
+
+}
+
+#blog-p2{
+  padding-top: 5%;
+  padding-bottom: 9%;
+
+
+}
+
+.blog-details button{
+  width:30%;
+  border: white 0px solid;
+  border-radius: 8px;
+  padding: 1% 3%;
+  
+}
+
+.blog-overlay{
+  height:100%;
+  font-size: 140px;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+.blog-overlay i{
+  margin-top: 40%;
+}
+
+.blog-img{
+  width: 40%;
+}
+
+.blog{
+  padding-bottom: 5%;
+}
+
+
+/*------------------------------------> touch*/
+
+  .touch-header{
+    border-color: white;
+  }
   
 
+  .touch form{
+    width:40%;
+    padding: 3%;
+    border: solid 0px white;
+    border-radius: 16px;
+
+  }
+
+  .name div{
+    width:46%;
+  }
+
+  .touch form button{
+    padding: 5% 0%;
+    border: solid 0px white;
+    border-radius:8px ;
+
+  }
+
+  .touch form input{
+    padding: 5%;
+    margin-bottom: 5%;
+    border: solid 1px #D0D5DD;
+    border-radius: 8px;
+  }
+
+  .touch form input[placeholder="you@company.com"]{
+    padding: 3%;
+    
+  }
+
+  .touch textarea{
+    padding: 10%;
+    border: solid 1px #D0D5DD;
+    border-radius: 8px;
+
+  }
+
+  .touch form p{
+
+    margin-left: 3%;
+  }
+
+  .touch-agree{
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+  }
+
+  #checkbox{
+    margin: 0%;
+
+  }
+
+  .touch label{
+    margin-bottom: 2%;
+  }
+
+  .touch form a{
+    text-decoration: underline;
+  }
+
+  .touch-card-margin-bottom{
+    margin-bottom: 5%;
+  }
+  .touch-cards{
+    flex-wrap: wrap;
+    width: 50%;
+    align-self: center;
+  }
+  .touch-card{
+    width: 50%;
+  }
+
+  .flex-wrap{
+    flex-wrap: wrap;
+  }
+
+  .touch-card i{
+    font-size: larger;
+  }
+
+  .touch-card-top{
+    margin-bottom: 10%;
+  }
+
+  .touch{
+    padding-bottom: 10%;
+  }
+
+  /*----------------------------->section join*/
+
+  .join{
+    border-top: solid 1px #CECECE;
+    padding-bottom: 10%;
+    padding-top: 3%;
+  }
+
+  .join-details{
+    width:50%;
+  }
+
+  .join form{
+    width:35%;
+  }
+
+  .join input{
+    width: 60%;
+    padding: 3%;
+    border: solid 0px white;
+    border-radius: 8px;
+  }
+
+  .join button{
+      border: solid 1px black;
+      border-radius: 8px;
+      width: 30%;
+      padding: 3%;
+      font-weight: bold;
+      margin-left: 2%;
+
+    
+  }
+
+  /*--------------------------------->footer*/
+  .footer-logo span{
+    margin-right: 3%;
+    margin-bottom: 8%;
+  }
+
+  .footer-details{
+    width:25%
+  }
+  
+
+  .footer-list ul li:first-child{
+    color: white;
+
+  }
+
+  .footer-list {
+    width: 70%;
+  }
+
+  .footer-list li{
+    margin-bottom: 20%;
+  }
+
+  .footer-end{
+    margin-top:10%;
+    border-top: solid 0.1px white;
+    padding-top: 5%;
+  }
+
+  .footer-icons{
+    width:20%;
+    font-size: large;
+    padding-bottom: 5%;
+  }
+  .footer-icons a{
+    color: white;
+  }
+
+  
+  
+
+
+
+
+  
 
 
   
