@@ -10,20 +10,34 @@
     
 </head>
 <body>
-    <section class="d-flex position-relative">
+    <section class="d-flex position-relative sans-serif">
     <nav class="d-flex width-100 position-absolute">
-        <div class="text-white d-flex justify-content-between nav-logo">
-         <span><sup><i class="fa-solid fa-paw"></i></sup><sub><i class="fa-solid fa-paw"></i></sub></span>
+        <div class="text-white d-flex  nav-logo">
+         <span ><sup><i class="fa-solid fa-paw width-50"></i></sup><sub><i class="fa-solid fa-paw width-50"></i></sub></span>
          <h1 >Paws n'Play</h1>
          </div>
-         <ul class="text-white d-flex justify-content-between nav-list">
-            <li class="d-flex ">
-                <h3>Shop</h3>
+         <ul class="text-white d-flex justify-content-between nav-list element-hidden">
+            <li class="d-flex services position-relative nav-shop ">
+                <h3><a href="" class="text-white">Shop</a></h3>
                 <i class="fa-solid fa-angle-down"></i>
+                <ul class="d-none">
+                    
+                    <li><h3><a href="" class="text-white">Cat</a></h3></li>
+                    <li><h3><a href="" class="text-white">Dogs</a></h3></li>
+                    <li><h3><a href="" class="text-white">Fish</a></h3></li>
+                    <li><h3><a href="" class="text-white">Birds</a></h3></li>
+                </ul>
             </li>
-            <li class="d-flex ">
-                <h3>Services</h3>
-                <i class="fa-solid fa-angle-down"></i>
+            <li class="d-flex nav-services position-relative ">
+                <h3><a href="" class="text-white">Services</a></h3>
+                <i class="fa-solid fa-angle-down "></i>
+                <ul class="d-none">
+                    <li><h3><a href="" class="text-white">Grooming</a></h3></li>
+                    <li><h3><a href="" class="text-white">Boarding</a></h3></li>
+                    <li><h3><a href="" class="text-white">Veterinary</a></h3></li>
+                    <li><h3><a href="" class="text-white">Training</a></h3></li>
+                    <li><h3><a href="" class="text-white">Adoption</a></h3></li>
+                </ul>
             </li>
             <li>
                 <h3><a href="" class="text-white">About Us</a></h3>
@@ -39,15 +53,15 @@
 
          <button class="bg-white">Get Started</button>
 
-         <i class="fa-solid fa-bars">
-            <ul class="text-white   nav-list-menu">
-            <li class="d-flex ">
-                <h3>Shop</h3>
-                <i class="fa-solid fa-angle-down"></i>
+         <i class="fa-solid fa-bars d-none  nav-menu d-flex position-relative">
+            <ul class="text-white d-none  position-absolute">
+            <li>
+                <h3><a href="" class="text-white">Shop</a></h3>
+                
             </li>
-            <li class="d-flex ">
-                <h3>Services</h3>
-                <i class="fa-solid fa-angle-down"></i>
+            <li>
+                <h3><a href="" class="text-white">Services</a></h3>
+                
             </li>
             <li>
                 <h3><a href="" class="text-white">About Us</a></h3>
@@ -64,19 +78,145 @@
     </nav>
     
     <div class="d-flex position-relative home width-100">
-      <img src="images/dog-bg.png" class="d-block">
-      <div class="home-overlay text-white position-absolute">
+      
+      <div class="home-overlay text-white ">
         <div class="home-details">
           <h1>Pawsitively Perfect: Where Every Pet's Dream Comes True!</h1>
           <p>Welcome to Paws n'Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and furry companionship with our wide range of products and services. From pampering essentials to playful toys, we're here to make every moment with your pet pawsitively perfect!"</p>
-          <button class="text-white d-flex justify-content-between">
+          <button class="text-white d-flex ">
               <h2>Shop Now</h2>
-              <span><sup><i class="fa-solid fa-paw"></i></sup><sub><i class="fa-solid fa-paw"></i></sub></span>
+              <span><sup><i class="fa-solid fa-paw width-50"></i></sup><sub><i class="fa-solid fa-paw width-50"></i></sub></span>
           </button>
         </div>
       </div>
     </div>
 
+    </section>
+
+    <section class="services sec-padding-top ">
+        <div class="section-header d-flex ">
+            <span><sup><i class="fa-solid fa-paw"></i></sup><sub><i class="fa-solid fa-paw"></i></sub></span>
+            <h1>Services</h1>
+        </div>
+        <div class="container">
+            <div class="services-body d-flex justify-content-between">
+                <div class="services-card-left ">
+                  <div class="d-flex services-card-left-top justify-content-between width-100">   
+                    <div class="services-card d-flex position-relative">
+                      <img src="images/grooming.png" class="width-100 d-block">
+                      <div class="services-overlay position-absolute ">
+                        <h1 class="text-white  position-absolute">Grooming</h1>
+                      </div>
+                    </div>
+
+                    <div class="services-card d-flex position-relative">
+                      <img src="images/boarding.png" class="width-100 d-block">
+                      <div class="services-overlay position-absolute ">
+                        <h1 class="text-white  position-absolute">Boarding</h1>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between width-100 ">
+                    <div class="services-card d-flex position-relative">
+                      <img src="images/veterinary.png" class="width-100 d-block">
+                      <div class="services-overlay position-absolute ">
+                        <h1 class="text-white  position-absolute">Veterinary</h1>
+                      </div>
+                    </div>
+
+                    <div class="services-card d-flex position-relative">
+                      <img src="images/training.png" class="width-100 d-block">
+                      <div class="services-overlay position-absolute ">
+                        <h1 class="text-white  position-absolute">Training</h1>
+                      </div>
+                    </div>
+
+                  </div> 
+                </div>
+
+                
+                <div class="services-card-right  services-card d-flex position-relative width-100">
+                    <img src="images/adoption.png" class="width-100 d-block">
+                    <div class="services-overlay position-absolute ">
+                        <h1 class="text-white  position-absolute">Adoption</h1>
+                    </div>
+                  </div>
+
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="team sec-padding-top">
+        <div class="section-header d-flex" >
+            <span><sup><i class="fa-solid fa-paw"></i></sup><sub><i class="fa-solid fa-paw"></i></sub></span>
+            <h1>Our Team</h1>
+        </div>
+
+        <div class="container d-flex team-cards justify-content-between">
+            <div class="team-card">
+                <img src="images/olivia.jpg" class="width-100 d-block">
+                <div class="team-card-body">
+                    <h2>Dr. Olivia Rhye</h2>
+                    <p>Senior veterinarian</p>
+                    <div class="team-icons d-flex">
+                        <a href=""><i class="fa-brands fa-twitter"></a></i>
+                        <a href="" class="in-icon"><i class="fa-brands fa-linkedin in-icon"></a></i>
+                        <a href=""><i class="fa-solid fa-basketball"></a></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="images/phoenix.jpg" class="width-100 d-block">
+                <div class="team-card-body">
+                    <h2>Phoenix Baker</h2>
+                    <p>Asst. Veterinarian</p>
+                    <div class="team-icons d-flex">
+                        <a href=""><i class="fa-brands fa-twitter"></a></i>
+                        <a href="" class="in-icon"><i class="fa-brands fa-linkedin in-icon"></a></i>
+                        <a href=""><i class="fa-solid fa-basketball"></a></i>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="images/lana.jpg" class="width-100 d-block" id="lana">
+                <div class="team-card-body" >
+                    <h2>Lana Steiner</h2>
+                    <p>Resident Veterinarian</p>
+                    <div class="team-icons d-flex">
+                        <a href=""><i class="fa-brands fa-twitter"></a></i>
+                        <a href="" class="in-icon"><i class="fa-brands fa-linkedin in-icon"></a></i>
+                        <a href=""><i class="fa-solid fa-basketball"></a></i>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="images/demi.jpg" class="width-100 d-block">
+                <div class="team-card-body">
+                    <h2>Demi Wilkinson</h2>
+                    <p>Intern Veterinarian</p>
+                    <div class="team-icons d-flex">
+                        <a href=""><i class="fa-brands fa-twitter"></a></i>
+                        <a href="" class="in-icon"><i class="fa-brands fa-linkedin "></a></i>
+                        <a href=""><i class="fa-solid fa-basketball"></a></i>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 

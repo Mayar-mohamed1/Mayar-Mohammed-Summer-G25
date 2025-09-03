@@ -1,0 +1,66 @@
+:root{
+    --blue:rgb(37, 134, 161);
+}
+/*----------------------reset style--------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+/*----------------------global style-----------*/
+.container{
+    width: 80%;
+    margin:0% auto;
+}
+
+
+/*--------------------custom style--------------*/
+
+table{
+    width: 80%;
+    margin: 10% auto;
+  
+    
+}
+
+th{
+    color:white;
+    background-color:var(--blue) ;
+}
+
+tr:nth-child(odd){
+    background-color: lightgray;
+
+}
+
+table , th ,td{
+    
+    
+}
+
+td{
+    border-bottom: solid 3px var(--blue);
+    
+
+}
+
+th , td{
+    padding:5%;
+}
+
+td:first-child , th:first-child{
+    width: 25%;
+    border:solid 0px white;
+
+}
+
+th{
+    text-align: center;
+}
+
