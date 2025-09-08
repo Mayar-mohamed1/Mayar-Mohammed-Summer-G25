@@ -12,3 +12,11 @@ a{
 li{
     list-style: none;
 }
+
+/*--------------------global style-------------------*/
+
+.bg-lightgray{
+    background-color: rgba(235, 234, 234, 0.575);
+}
+
+/*---.text-secondary-emphasis---*/
