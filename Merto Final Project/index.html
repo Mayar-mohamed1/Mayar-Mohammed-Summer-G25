@@ -11,26 +11,128 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+
+    <!-------------------Header----------------------->
+    <header class="border-bottom border-2">
+      <div class="container ">
+        <div class="row justify-content-between py-3 ">
+          <!---------Header-left------------>
+          <div class="col-4">
+            <!--Header-left-left------------>
+            <div class="d-flex">
+             
+             <div class="d-flex border-end border-2 position-relative ">
+               <div class="">
+                <a href="#" class="text-black nav-icon d-block w-100 drop-hover">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/english.png">
+                <span>English</span>
+                <i class="fa-solid fa-angle-down angle-icon"></i>
+                </a>
+                <!------moveeeeeeeeeeeeeee-->
+                <ul class="w-100 position-absolute header-ul1 p-0 m-0 py-3 text-center shadow rounded d-none drop-hover-ul">
+                  <li>
+                    <a href="#" class="text-black nav-icon">
+                      <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/espanol.png">
+                      <span>Espagnol</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-black nav-icon">
+                      <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/francais.png">
+                      <span>Francais</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-black nav-icon">
+                      <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/portugues.png">
+                      <span>Portugues</span>
+                    </a>
+                  </li>
+
+                </ul>
+               </div>
+
+               <div class="mx-2">
+                <a href="#" class="text-black nav-icon d-block w-100 ">
+                <span>USD</span>
+                <i class="fa-solid fa-angle-down angle-icon"></i>
+                </a>
+
+             </div>
+             </div>
+             <!--Header-left-right------------>
+             <div class="d-flex ">
+                <div class="mx-2">
+                   <a href="#" class="text-black nav-icon d-block w-100 ">
+                     Track Order
+                     
+                   </a>
+
+                </div>
+
+                <div class="mx-2">
+                   <a href="#" class="text-black nav-icon d-block w-100 ">
+                     Contact
+                   </a>
+
+                </div>
+
+                <div class="mx-2">
+                   <a href="#" class="text-black nav-icon d-block w-100 ">
+                      FAQS
+                   </a>
+
+                </div>
+
+              
+
+             </div>
+            </div>
+          </div>
+          <!---------Header-right--------->
+          <div class="col-5 ">
+            <div class="d-flex justify-content-end">
+            <!-------Header-right-left---->
+            <div class="d-flex border-end border-2 pe-3 ">
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-x-twitter"></i></a>
+               
+            </div>
+
+            <!------Header-right-right-->
+            <div class="ms-3">
+              <a href="#" class="text-black nav-icon">Contact us 24/7  <span class="fw-semibold">(+92) 3942 7879</span></a>
+            </div>
+
+            </div>
+          </div>
+        
+      </div>
+    </header>
 
     <!-------------------navbar----------------------->
     <nav class="navbar  ">
-      <div class="container">
-        <div class="row w-100">
+      <div class="container pe-0">
+        <div class="row w-100 py-3 ">
          <!---------------------logo------------>
-           <div class="col-3">
+           <div class="col-3  align-content-center ">
              <a class="navbar-brand" href="index.html"><img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/logo-furniture.png" class="w-50"></a>
            </div>
          <!------------Dropdown & Search--------->
-            <div class="col-5">
-                <div class="row bg-lightgray ">
+            <div class="col-6 align-content-center">
+                <div class="row bg-lightgray  ">
                <!-----------Dropdown---------->
-                  <div class="col-4">
-                     <div class="dropdown">
-                         <button class="btn btn-transperant dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="col-4 p-0 align-content-center">
+                     <div class="dropdown border-end border-2">
+                         <button class="btn btn-transperant dropdown-toggle w-100 p-0 fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           All Categories
                          </button>
-                         <ul class="dropdown-menu">
+                         <ul class="dropdown-menu border border-bottom-0 border-black w-100">
                          <li><a class="dropdown-item" href="#">All Categories</a></li>
                          <li><a class="dropdown-item" href="#">Autopart</a></li>
                          <li><a class="dropdown-item" href="#">Accesories</a></li>
@@ -62,16 +164,74 @@
                         </ul>
                      </div>
                   </div>
+                 
+
               <!------------Search------------>
-                    <div class="col-8">
+                    <div class="col-8 p-0  align-content-center py-1 ">
+                      <nav class="navbar bg-transperant w-100 p-0  ms-2">
+                         <div class="w-100">
+                            <form class="d-flex " role="search">
+                              <input class="form-control me-2 border-0 py-3 " type="search " placeholder="Search for products" aria-label="Search"/>
+                              <button class="btn bg-red text-white px-3 " type="submit"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+                            </form>
+                         </div>
+                       </nav>
 
                         
                     </div>
                 </div>
             </div>
+         <!-----------------icons---------------->
+            <div class="col-3 align-content-center pe-0">
+              <div class="row  justify-content-end ">
+              <!------Account & icon------->  
+                 <div class="col-6">
+                    <div class="ms-5 nav-icon">
+                      <div class="d-flex">
+                        <i class="fa-regular fa-user fs-5 me-2"></i>
+                        <span><a href="#" class="text-black fw-semibold ">Account</a></span>
+                      </div>
+                   </div>
+                 </div>
+              <!------------heart---------->   
+                 <div class="col-2">
+                  <div >
+                    <a href="#" class="text-black ">
+                    <i class="fa-regular fa-heart position-relative fs-5 nav-icon ">
+                    <span class="position-absolute top-0 start-100 translate-middle bg-danger border border-light rounded-circle icons-badge "><span class="text-white fs-6">0</span></span>
+                    </i>
+                    </a>
+
+                  </div>
+
+                 </div>
+              <!-----------Shopping--------->   
+                 <div class="col-2">
+                  <div >
+                    <a href="#" class="text-black ">
+                      <i class="fa-solid fa-cart-shopping position-relative fs-5 nav-icon ">
+                        <span class="position-absolute top-0 start-100 translate-middle bg-danger border border-light rounded-circle icons-badge "><span class="text-white nav-shop-icon">0</span></span>
+                      </i>
+                    </a>
+
+                  </div>
+
+                 
+
+
+
+                 </div>
+
+              </div>
+            </div>
          </div>
       </div>
-   </nav>
+    </nav>
+    <!--------------------navbar2-------------------->
+    <section class="nav2">
+      
+
+    </section>
     
 
 
