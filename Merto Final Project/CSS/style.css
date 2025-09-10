@@ -2,6 +2,7 @@
      --bg-lightgray:rgba(235, 234, 234, 0.575);
      --text-gray:gray;
      --bg-red:#A3381C;
+
 }
 
 
@@ -33,6 +34,54 @@ li{
     background-color: var(--bg-red);
 }
 
+.cursor-pointer{
+    cursor: pointer;
+}
+.text-x-small{
+    font-size: x-small !important;
+}
+
+.text-small{
+    font-size: small;
+}
+
+.pt-15{
+    padding-top: 8%;
+}
+.bg-beige{
+    background-color: rgb(214, 207, 184);
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+.moving-line{
+    width: 100%;
+    border:solid 0.2px black;
+}
+.line-hov{
+    overflow: hidden;
+}
+.line-hov:hover div{
+    animation-name: lines;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 400ms;
+
+}
+
+@keyframes lines{
+    0%{
+        margin-left: 0%;
+    }
+    100%{
+        margin-left: 100%;
+    }
+}
+
+
+
 
 
 
@@ -56,8 +105,18 @@ header .angle-icon{
 
 }
 /***disabled???!!!!*/
-.drop-hover:hover .drop-hover-ul{
-    display: block;
+.englishh:hover ul{
+    display: block !important;
+    position: absolute !important;
+    top:100%;
+}
+
+.usd:hover ul{
+    display: block !important;
+    position: absolute !important;
+    top:100%;
+    left: 50%;
+
 }
 /*---------------navbar-------------------*/
 nav .btn{
@@ -136,3 +195,83 @@ nav .dropdown{
     font-size: 16px !important;
     font-weight: 100;
 }
+
+header{
+    top:0%;
+    z-index: 99;
+    width:100%;
+    background-color: white;
+}
+
+.nav-pt{
+    padding-top:4%;
+ 
+}
+
+.z-index-5{
+    z-index: 5;
+}
+
+.w-19{
+    width: 19%;
+}
+
+.z-index-10{
+    z-index: 10;
+}
+
+.overlay-carousel{
+    top: 46%;
+    left: 30%;
+}
+
+.overlay-carousel h1{
+    font-size: 47px;
+}
+.overlay-carousel p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.overlay-carousel-a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*----carousel----*/
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    border: solid 2px black;
+    border-radius: 50%;
+    height: 10px;
+    background-color: transparent;
+}
+
+/*------pros-section-----*/
+
+.pros-hov:hover i{
+    color: black;
+}
+
+/*------week's sales-----*/
+.week-badge{
+    left: 7%;
+    top:7%;
+}
+.week-icons{
+    right: 0%;
+    top:5%;
+}
+
+.week-icon:hover{
+    background-color: black !important;
+    color: white !important;
+}
+
+.week-card-hov:hover div:first-child ul{
+    display: block !important;
+}
+

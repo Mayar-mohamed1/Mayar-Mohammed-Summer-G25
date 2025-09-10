@@ -11,25 +11,28 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-
+  <!----------header&navbar&navbar2&carousel----------->
+  <div class="position-relative ">
+  <!---------put the header on the top of navbar------>
+  <div class="position-relative position-absolute w-100 z-index-5">
     <!-------------------Header----------------------->
-    <header class="border-bottom border-2">
+    <header class="border-bottom border-2 position-absolute z-5">
       <div class="container ">
-        <div class="row justify-content-between py-3 ">
+        <div class="row justify-content-between py-3 text-small fw-semibold">
           <!---------Header-left------------>
           <div class="col-4">
             <!--Header-left-left------------>
             <div class="d-flex">
              
-             <div class="d-flex border-end border-2 position-relative ">
-               <div class="">
-                <a href="#" class="text-black nav-icon d-block w-100 drop-hover">
+             <div class="d-flex border-end border-2 position-relative">
+               <div class=" englishh">
+                <a href="#" class="text-black nav-icon d-block w-100 ">
                 <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/english.png">
                 <span>English</span>
                 <i class="fa-solid fa-angle-down angle-icon"></i>
                 </a>
                 <!------moveeeeeeeeeeeeeee-->
-                <ul class="w-100 position-absolute header-ul1 p-0 m-0 py-3 text-center shadow rounded d-none drop-hover-ul">
+                <ul class="w-100  header-ul1 p-0 m-0 py-3 text-center shadow rounded d-none bg-white" id="ul1">
                   <li>
                     <a href="#" class="text-black nav-icon">
                       <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/espanol.png">
@@ -47,18 +50,35 @@
                   <li>
                     <a href="#" class="text-black nav-icon">
                       <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/portugues.png">
-                      <span>Portugues</span>
+                      <span>Portugal</span>
                     </a>
                   </li>
 
                 </ul>
                </div>
 
-               <div class="mx-2">
+               <div class="mx-2 usd ">
+                <div class="">
                 <a href="#" class="text-black nav-icon d-block w-100 ">
                 <span>USD</span>
                 <i class="fa-solid fa-angle-down angle-icon"></i>
                 </a>
+                </div>
+                <!------moveeeeeeeeeeeeeee-->
+                <ul class="w-100 position-absolute header-ul1 p-0 m-0 py-4 text-center shadow rounded d-none  bg-white">
+                  <li>
+                    <a href="#" class="text-black nav-icon">
+                      <span>EUR</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-black nav-icon">
+                      <span>BRL</span>
+                    </a>
+                  </li>
+                </ul>
+
 
              </div>
              </div>
@@ -116,8 +136,8 @@
     </header>
 
     <!-------------------navbar----------------------->
-    <nav class="navbar  ">
-      <div class="container pe-0">
+    <nav class="navbar pb-3 nav-pt bg-white ">
+      <div class="container pe-0 position-sticky top-0">
         <div class="row w-100 py-3 ">
          <!---------------------logo------------>
            <div class="col-3  align-content-center ">
@@ -125,7 +145,7 @@
            </div>
          <!------------Dropdown & Search--------->
             <div class="col-6 align-content-center">
-                <div class="row bg-lightgray  ">
+                <div class="row bg-lightgray rounded ">
                <!-----------Dropdown---------->
                   <div class="col-4 p-0 align-content-center">
                      <div class="dropdown border-end border-2">
@@ -227,17 +247,475 @@
          </div>
       </div>
     </nav>
-    <!--------------------navbar2-------------------->
-    <section class="nav2">
-      
-
-    </section>
     
+    <!--------------------navbar2-------------------->
+    <section class="nav2 bg-white">
+      <div class="container ">
+         <div class="row  ">
+        <!-------shop menu------>
+          <div class="col-3 align-content-center ">
+            <div class="position-relative" >
+             <div class="text-white bg-red d-flex p-3 rounded-top cursor-pointer ">
+               <i class="fa-solid fa-bars me-2 align-self-center "></i>
+               <h6 class="me-auto mb-0">SHOP BY CATEGORIES</h6>
+               <i class="fa-solid fa-angle-down text-x-small align-self-center "></i>
+             </div>
+             <!------move-->
+             <ul class="p-0 border border-1 rounded-bottom position-absolute bg-white w-100">
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-couch"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Living Room</p>
+                  </a>
+                  
+                </li>
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-bed"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Bedroom</p>
+                  </a>
+                  
+                </li>
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Dinning Room</p>
+                  </a>
+                  
+                </li>
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-bath"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Bathroom</p>
+                  </a>
+                  
+                </li>
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Kitchen Room</p>
+                  </a>
+                  
+                </li>
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-house-laptop"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Home Office</p>
+                  </a>
+                  
+                </li>
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Hoom Decoration</p>
+                  </a>
+                  
+                </li>
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-campground"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Outdoor</p>
+                  </a>
+                  
+                </li>
+                <li class="cursor-pointor p-3 border-bottom border-1">
+                  <a href="#" class="d-flex nav-icon text-black align-items-center">
+                    <i class="fa-solid fa-percent"></i>
+                    <p class="ms-4 mb-0 fw-semibold">Sale Off</p>
+                  </a>
+                  
+                </li>
+
+             </ul>
+            </div>
 
 
+            </div>
+        <!-------nav2-center---->    
+          <div class="col-5 align-content-center">
+            <div class="d-flex justify-content-between px-2">
+              <div  >
+                <a href="#" class="text-black nav-icon d-block w-100 ">
+                <span class="fw-semibold">Home</span>
+                <i class="fa-solid fa-angle-down angle-icon text-x-small"></i>
+                </a>
+
+              </div>
+
+              <div>
+                <a href="#" class="text-black nav-icon d-block w-100 ">
+                <span class="fw-semibold">Shop</span>
+                <i class="fa-solid fa-angle-down angle-icon text-x-small"></i>
+                </a>
+
+              </div>
+
+              <div >
+                <a href="#" class="text-black nav-icon d-block w-100 ">
+                <span class="fw-semibold">Products</span>
+                <i class="fa-solid fa-angle-down angle-icon text-x-small"></i>
+                </a>
+
+             </div>
+
+             <div>
+                <a href="#" class="text-black nav-icon d-block w-100 ">
+                <span class="fw-semibold">Pages</span>
+                <i class="fa-solid fa-angle-down angle-icon text-x-small"></i>
+                </a>
+
+             </div>
+
+             <div >
+                <a href="#" class="text-black nav-icon d-block w-100 ">
+                <span class="fw-semibold">Blog</span>
+                
+                </a>
+
+             </div>
+
+             <div>
+                <a href="#" class="text-black nav-icon d-block w-100 ">
+                <span class="fw-semibold">About us</span>
+                
+                </a>
+
+             </div>
+
+
+            </div>
+
+          </div>
+        <!-------nav2-right----->  
+          <div class="col-2 align-content-center ms-auto pe-0">
+            <div  >
+              <a href="#" class="text-black nav-icon d-flex w-100 justify-content-end">
+                <span >Recently Viewed</span>
+                <i class="fa-solid fa-angle-down angle-icon text-x-small align-self-center"></i>
+              </a>
+
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!--------------------carousel-------------------->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  <div class="carousel-inner bg-beige">
+    <div class="carousel-item active pt-15 position-relative pb-5">
+      <img src="images/slide1.png" class="d-block w-75 ms-auto mt-auto " alt="...">
+      <div class="overlay position-absolute w-100 h-100 z-index-10 overlay-carousel">
+        <div class="w-19">
+        <p class="fw-bold">Made in Italy</p>
+        <h1 class="fw-bold">Best Seller Sofa & Chair Livingroom</h1>
+        <a class="btn btn-transperant border border-1 border-dark w-50 fw-bold px-3 py-2 overlay-carousel-a mt-4" href="#" role="button">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item  pt-15 position-relative pb-5">
+      <img src="images/slide2.png" class="d-block w-75 ms-auto mt-auto " alt="...">
+      <div class="overlay position-absolute w-100 h-100 z-index-10 overlay-carousel">
+        <div class="w-19">
+        <p class="fw-bold">Made in Italy</p>
+        <h1 class="fw-bold">Full Bed & Upholstred Headboard</h1>
+        <a class="btn btn-transperant border border-1 border-dark w-50 fw-bold px-3 py-2 overlay-carousel-a mt-4" href="#" role="button">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item  pt-15 position-relative pb-5">
+      <img src="images/slide3.png" class="d-block w-75 ms-auto mt-auto " alt="...">
+      <div class="overlay position-absolute w-100 h-100 z-index-10 overlay-carousel">
+        <div class="w-19">
+        <p class="fw-bold">Made in Italy</p>
+        <h1 class="fw-bold">Modern Dinning sit For Kitchen</h1>
+        <a class="btn btn-transperant border border-1 border-dark w-50 fw-bold px-3 py-2 overlay-carousel-a mt-4" href="#" role="button">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+    </div>
+
+  <!-----------pros cards------------------------------>
+  <section>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col border-end border-1 pros-hov">
+          <div class="pros-card d-flex ">
+            <i class="fa-solid fa-truck-fast text-gray fs-2 align-self-center"></i>
+            <div class="align-self-center ms-4">
+              <h5>Fast, Free Shipping</h5>
+              <p class="text-gray mb-0">On order over $50</p>
+            </div>
+          </div>
+        </div>
+        <div class="col border-end border-1 pros-hov">
+          <div class="pros-card d-flex justify-content-center">
+            <i class="fa-regular fa-clock text-gray fs-2 align-self-center"></i>
+            <div class="align-self-center ms-4">
+              <h5>Next Day Delivery</h5>
+              <p class="text-gray mb-0">Free-Spend over $99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col border-end border-1 pros-hov">
+          <div class="pros-card d-flex justify-content-center">
+            <i class="fa-solid fa-percent text-gray fs-2 align-self-center"></i>
+            <div class="align-self-center ms-4">
+              <h5>Low Price Guarantee</h5>
+              <p class="text-gray mb-0">We offer competitive prices</p>
+            </div>
+          </div>
+        </div>
+        <div class="col pros-hov">
+          <div class="pros-card d-flex justify-content-end ">
+            <i class="fa-regular fa-thumbs-up text-gray fs-2 align-self-center"></i>
+            <div class="align-self-center ms-4">
+              <h5>Quality Guarantee</h5>
+              <p class="text-gray mb-0">We Guarantee Our Products</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------week's sales--------------------------->
+  <section>
+    <div class="container py-5">
+    <!---Header-->
+      <div class="d-flex justify-content-between">
+        <h3>Don't miss this week's sales</h3>
+        <a href="#" class="text-black line-hov">
+          <p class="fw-semibold mb-0">See all Products</p>
+          <div class="moving-line"></div>
+        </a>
+      </div>
+    <!--week-cards-->  
+   <div class="w-100 pt-4">
+      <div class="row flex-nowrap">
+          <div class="col p-0 ">
+            <div class="card rounded-end-0 week-card-hov">
+              <div class="position-relative">
+              
+             <img src="images/clock.png" class="card-img-top" alt="...">
+             <span class="badge bg-red rounded position-absolute p-2  week-badge">-33%</span>
+             <ul class=" position-absolute week-icons ">
+              <li><button type="button" class="btn bg-lightgray week-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Wishlist" >
+               <i class="fa-regular fa-heart"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" >
+               <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" >
+               <i class="fa-solid fa-magnifying-glass"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" >
+               <i class="fa-solid fa-cart-shopping"></i>
+              </button></li>
+
+              
+
+
+            </ul>
+             </div>
+             <div class="card-body">
+               <a href="#" class="card-title fs-6 text-black nav-icon fw-semibold">14-inch Fasion Simplicity Quality Wall Clock.</a>
+               <div class="d-flex">
+                <span class="fw-bold fs-4">$50</span>
+                <span class="text-decoration-line-through text-gray fs-6 align-self-center ms-2">$75</span>
+               </div>
+               <div class="d-flex mt-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="card rounded-0 week-card-hov ">
+              <div class="position-relative">
+              
+             <img src="images/Chair.png" class="card-img-top" alt="...">
+             <span class="badge bg-red rounded position-absolute p-2  week-badge">-20%</span>
+             <ul class=" position-absolute week-icons ">
+              <li><button type="button" class="btn bg-lightgray week-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Wishlist" >
+               <i class="fa-regular fa-heart"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" >
+               <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" >
+               <i class="fa-solid fa-magnifying-glass"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" >
+               <i class="fa-solid fa-cart-shopping"></i>
+              </button></li>
+
+              
+
+
+            </ul>
+             </div>
+             <div class="card-body">
+               <a href="#" class="card-title fs-6 text-black nav-icon fw-semibold">Studio Designs Home, Heather Studio Designs Chair</a>
+               <div class="d-flex">
+                <span class="fw-bold fs-4">$192</span>
+                <span class="text-decoration-line-through text-gray fs-6 align-self-center ms-2">$239</span>
+               </div>
+               <div class="d-flex mt-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="card rounded-end-0 week-card-hov" >
+              <div class="position-relative">
+              
+             <img src="images/table.png" class="card-img-top" alt="...">
+             <span class="badge bg-red rounded position-absolute p-2  week-badge">-48%</span>
+             <ul class=" position-absolute week-icons ">
+              <li><button type="button" class="btn bg-lightgray week-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Wishlist" >
+               <i class="fa-regular fa-heart"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" >
+               <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" >
+               <i class="fa-solid fa-magnifying-glass"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" >
+               <i class="fa-solid fa-cart-shopping"></i>
+              </button></li>
+
+              
+
+
+            </ul>
+             </div>
+             <div class="card-body">
+               <a href="#" class="card-title fs-6 text-black nav-icon fw-semibold">Mid Century Modern Round Dining Table in Oak</a>
+               <div class="d-flex">
+                <span class="fw-bold fs-4">$569</span>
+                <span class="text-decoration-line-through text-gray fs-6 align-self-center ms-2">$1,099</span>
+               </div>
+               <div class="d-flex mt-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="card rounded-0 week-card-hov" >
+              <div class="position-relative">
+              
+             <img src="images/chair-arm.png" class="card-img-top" alt="...">
+             <span class="badge bg-secondary rounded position-absolute p-2  week-badge">SOLD OUT</span>
+             <ul class=" position-absolute week-icons ">
+              <li><button type="button" class="btn bg-lightgray week-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Wishlist" >
+               <i class="fa-regular fa-heart"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" >
+               <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" >
+               <i class="fa-solid fa-magnifying-glass"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" >
+               <i class="fa-solid fa-cart-shopping"></i>
+              </button></li>
+
+              
+
+
+            </ul>
+             </div>
+             <div class="card-body">
+               <a href="#" class="card-title fs-6 text-black nav-icon fw-semibold">High seating comfort with built in armrest</a>
+               <div class="d-flex">
+                <span class="fw-bold fs-4">$1,465</span>
+                <span class="text-decoration-line-through text-gray fs-6 align-self-center ms-2">$1,536</span>
+               </div>
+               <div class="d-flex mt-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
+            <div class="card rounded-start-0 week-card-hov" >
+              <div class="position-relative">
+              
+             <img src="images/lamp.png" class="card-img-top" alt="...">
+             <span class="badge bg-red rounded position-absolute p-2  week-badge">-26%</span>
+             <ul class=" position-absolute week-icons ">
+              <li><button type="button" class="btn bg-lightgray week-icon" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Wishlist" >
+               <i class="fa-regular fa-heart"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" >
+               <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" >
+               <i class="fa-solid fa-magnifying-glass"></i>
+              </button></li>
+              <li><button type="button" class="btn bg-lightgray week-icon mt-1" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" >
+               <i class="fa-solid fa-cart-shopping"></i>
+              </button></li>
+
+              
+
+
+            </ul>
+             </div>
+             <div class="card-body">
+               <a href="#" class="card-title fs-6 text-black nav-icon fw-semibold">Slate Table Lamp with Natural Slate Finish</a>
+               <div class="d-flex">
+                <span class="fw-bold fs-4">$138</span>
+                <span class="text-decoration-line-through text-gray fs-6 align-self-center ms-2">$188</span>
+               </div>
+               <div class="d-flex mt-2">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="JS/script.js"></script>
+    
 </body>
 </html>
+
