@@ -92,10 +92,13 @@ changeImg=function(){
             tBody.append(row)
 
             removeUserBtn.addEventListener("click",(e)=>{
-            var td=e.target.parentNode
+           /* var td=e.target.parentNode
             var tr=td.parentNode
             td.innerText=""
-            tr.innerText=""
+            tr.innerText=""*/
+            users.splice(i,1)
+            displayUser()
+
 
             })
 
