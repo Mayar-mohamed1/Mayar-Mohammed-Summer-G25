@@ -122,8 +122,10 @@ if(document.getElementById("contactForm")){
    contactForm.addEventListener("submit",(e)=>{
       e.preventDefault()
       if(emailIsValid&&nameIsValid&&subjectIsValid){
+         
+        
          contactForm.submit();
-         showSuccess();
+          showSuccess(e);
          
       }
       else
@@ -139,7 +141,8 @@ if(document.getElementById("contactForm")){
       errorMessage.innerText="One or more fields have an error. Please check and try again."
    }
 
-   showSuccess=()=>{
+   showSuccess=(e)=>{
+      e.preventDefault();
       var errorMessage=document.getElementById("errorMessage")
       errorMessage.innerText="Thank you for your message. It has been sent."
    }
