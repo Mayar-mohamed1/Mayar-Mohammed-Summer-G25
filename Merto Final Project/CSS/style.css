@@ -357,6 +357,9 @@ header{
     z-index: 10;
 }
 
+.soldOut{
+    filter: opacity(0.5);
+}
 
 
 /*-----3 images------*/
@@ -572,4 +575,23 @@ footer input{
 /*--------------------------------------------------contact page--------------------------------------------------*/
 .footer2 a{
     color: white !important;
+}
+
+.contact h1{
+    font-size: 80px;
+}
+
+.w-40{
+    width: 49%;
+}
+
+.bg-orange{
+    background-color: rgb(251, 234, 202);
+}
+.text-orange{
+    color: orange;
+}
+
+.store-card:hover img{
+    filter:brightness(1.1) ;
 }

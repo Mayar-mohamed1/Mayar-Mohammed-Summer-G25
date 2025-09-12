@@ -11,7 +11,7 @@
     
     <link rel="stylesheet"  href="CSS/style.css">
 </head>
-<body>
+<body id="boody">
     <!-------------------navbar----------------------->
     <nav class="navbar nav-pt bg-white  top-0 border-bottom border-1" id="navy">
       <div class="container pe-0 position-sticky top-0">
@@ -125,6 +125,136 @@
       </div>
     </nav>
 
+    <!----------button-uparrow--------------------------->
+    <a href="#boody" id="upArrow" class="bg-dark text-white rounded p-1 end-0 bottom-0 position-fixed mb-2 me-2 d-none">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a> 
+
+    <!-------------------contact---------------------------->
+    <section class="contact ">
+      <div class="container py-5">
+        <h1 class="text-center fw-bold pt-4 mb-3">Contact Us</h1>
+        <p class="text-center text-gray mb-0">34 Main Street, Los Angeles 9021</p>
+        <p class="text-center text-gray">United States</p>
+        <div class="d-flex justify-content-center my-5">
+          <div class="contact-card ">
+            <i class="fa-solid fa-phone-volume fs-3 "></i>
+            <h5 class="my-3">Customer service</h5>
+            <span class="overflow-hidden">
+            <a href="tel:+92 3942 7879" class="text-black line-hov nav-icon d-inline-block">
+              <p class=" mb-0">+92 3942 7879</p>
+              <div class="moving-line "></div>
+            </a>
+            </span>
+            <p class="text-gray mt-2">Call us from 8am to 8pm</p>
+          </div>
+          <div class="contact-card mx-5">
+            <i class="fa-regular fa-message fs-3"></i>
+            <h5 class="my-3">Chat with us</h5>
+            <span class="overflow-hidden">
+            <a href="#" class="text-black line-hov  d-inline-block">
+              <p class=" mb-0">Live Chat</p>
+              <div class="moving-line "></div>
+            </a>
+            </span>
+            <p class="text-gray mt-2">Daily: 8 am to 11 pm</p>
+          </div>
+          <div class="contact-card me-5">
+            <i class="fa-regular fa-envelope fs-3"></i>
+            <h5 class="my-3">Write to us</h5>
+            <span class="overflow-hidden">
+            <a href="contact@example.com" class="text-black line-hov nav-icon d-inline-block">
+              <p class=" mb-0">contact@example.com</p>
+              <div class="moving-line nav-icon "></div>
+            </a>
+            </span>
+           
+          </div>
+          <div class="contact-card">
+            <i class="fa-solid fa-user-plus fs-3"></i>
+            <h5 class="my-3">Follow us</h5>  
+              <div class="d-flex  pe-3 ">
+              <a href="#" class="text-black nav-icon me-2"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-black nav-icon mx-2"><i class="fa-brands fa-x-twitter"></i></a>
+               
+            </div>
+            
+          </div>
+        </div>
+
+        <form class="mt-4 w-75 mx-auto" id="contactForm">
+          
+          <h2 class="text-center mb-5">Do you have some questions?</h2>
+          <p class="text-orange bg-orange  text-center py-2 mb-4 w-100 rounded d-none " id="errorMessage"></p>
+          <div class="d-flex justify-content-between">
+            <div class="w-40">
+            <input placeholder="Name and Surname *" type="text" class="bg-lightgray w-100 border-0 ps-3 py-3 rounded" id="contactName">
+            <p class="text-danger"></p>
+            </div>
+            <div class="w-40">
+            <input placeholder="Email *" type="text" class="bg-lightgray w-100 border-0 ps-3 py-3 rounded" id="contactEmail">
+            <p class="text-danger"></p>
+            </div>
+          </div>
+          <div>
+          <input placeholder="Subject *" type="text" class="bg-lightgray w-100 border-0 ps-3 py-3 rounded my-3 " id="contactSubject">
+          <p class="text-danger"></p>
+          </div>
+          <textarea class="bg-lightgray w-100 border-0 ps-3 py-3 rounded  d-block overflow-hidden" rows="5" placeholder="Message"></textarea>
+          <div class="d-grid gap-2 mt-4">
+            <button class="btn btn-dark fs-5 fw-semibold" type="submit">Get in Touch</button>
+          </div>
+        </form>
+
+        
+      </div>
+    </section>
+
+    <!--------------------Map------------------------------->
+    <section class="mt-3">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26445.02317015706!2d-118.24997700000002!3d34.053415!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1757666745209!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-------------------Stores Around World----------------->
+     <section>
+      <div class="container py-5">
+        <h2 class="text-center mb-5">Stores around the world</h2>
+        <div class="d-flex ">
+          <div class="card store-card border-0" >
+           <img src="images/about-1.jpg" class="card-img-top rounded" alt="...">
+           <div class="card-body px-0">
+             <h4>Los Angeles</h4>
+             <p class="card-text text-gray mb-0 ">34 Main Street, Los Angeles 9021</p>
+             <p class="card-text text-gray">United States</p>
+             <p>+02 1234 567 88</p>
+            </div>
+          </div>
+          <div class="card store-card border-0 mx-5" >
+           <img src="images/about-2.jpg" class="card-img-top rounded" alt="...">
+           <div class="card-body px-0">
+             <h4>New York</h4>
+             <p class="card-text text-gray mb-0 ">515 Broadway 10015 New York</p>
+             <p class="card-text text-gray">United States</p>
+             <p>+49 1234 567 88</p>
+            </div>
+          </div>
+          <div class="card store-card border-0" >
+           <img src="images/about-3.jpg" class="card-img-top rounded" alt="...">
+           <div class="card-body px-0">
+             <h4>California</h4>
+             <p class="card-text text-gray mb-0 ">1000 California St 68114 Omaha</p>
+             <p class="card-text text-gray">United States</p>
+             <p>+44 1234 567 88</p>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+     </section>
 
     <!-------------------footer2--------------------------->
   <footer class="pt-5 bg-dark footer2">
@@ -226,6 +356,9 @@
         </div>
     </div>
   </footer>
+    
+    
+
 
     
 
