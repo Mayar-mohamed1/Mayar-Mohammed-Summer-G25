@@ -31,7 +31,7 @@ li{
 }
 
 .bg-red{
-    background-color: var(--bg-red);
+    background-color: var(--bg-red) !important;
 }
 
 .cursor-pointer{
@@ -65,19 +65,27 @@ li{
 }
 .line-hov:hover div{
     animation-name: lines;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-timing-function: ease;
-    animation-duration: 400ms;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
 
 }
 
 @keyframes lines{
     0%{
-        margin-left: 0%;
+        /* margin-left: 0%; */
     }
     100%{
         margin-left: 100%;
     }
+}
+
+.fs-small{
+    font-size: small;
+}
+.fw-bolder{
+    font-weight: bolder;
 }
 
 
@@ -237,19 +245,20 @@ header{
 
 .overlay-carousel-a:hover{
     background-color: black;
-    color: white;
+    color: white !important;
 }
 
 
 
 /*----carousel----*/
 .carousel-indicators [data-bs-target]{
-    width: 10px;
+    width: 8px;
     aspect-ratio: 1 / 1;
-    border: solid 2px black;
+    border: solid 1px black;
     border-radius: 50%;
     height: 10px;
     background-color: transparent;
+    opacity: 1;
 }
 
 .img-slide{
@@ -267,6 +276,16 @@ header{
     height: 80%;
 }
 
+.carousel-indicators .active {
+   
+    background-color: black !important;
+}
+
+.owl-carousel1 .owl-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 /*------pros-section-----*/
 
 .pros-hov:hover i{
@@ -288,7 +307,223 @@ header{
     color: white !important;
 }
 
-.week-card-hov:hover div:first-child ul{
+.week-card-hov:hover  ul{
     display: block !important;
+
+}
+
+.week-card-hov:hover{
+    
+    box-shadow: 0px 0px 3px 5px lightgray;
+    border: solid white 0px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+/*-----3 images------*/
+.button-white:hover{
+    background-color: white;
+    color: black !important;
+
+}
+
+.overlay-3img{
+    top:8%;
+    left:8%;
+}
+
+.img3-plant .overlay-3img{
+     top: 20%;
+     left: 8%;
+     width: 34% !important;
+}
+
+.underline{
+    border:solid 1.8px black;
+    width: 45%;
+    margin-left: 35%;
+}
+
+.img3-plant .badgge{
+    width:10%;
+    aspect-ratio: 1 / 1;
+    top:30%;
+    right: 17%;
+    
+}
+
+.top-20{
+    top: 20%;
+}
+
+.w-lamp{
+    width:30%;
+}
+
+.img3:hover img{
+    animation-name: ggg;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards;
+    
+}
+
+@keyframes ggg{
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+
+
+/*-----------cyber-------------*/
+.cyber-circle{
+    width:15%;
+    aspect-ratio: 1 / 1;
+    color:var(--bg-red);
+    border:solid var(--bg-red) 1px;
+    border-radius: 50%;
+    &:hover{
+        animation-name: cc;
+        animation-duration: 0.2s;
+        animation-timing-function:linear;
+        animation-fill-mode:forwards;
+
+    }
+    
+}
+
+@keyframes cc{
+    100%{
+        transform: translateY(-8px);
+    }
+    
+}
+
+.c1:hover{
+    background-color: #efd2ca !important;
+    border: 0;
+}
+
+
+.cyber-circle h1{
+    margin-top: 18%;
+    
+}
+.cy-circles{
+    padding: 0% 15%;
+    left: 0%;
+    bottom: 50%;
+
+}
+
+.cyber-title{
+    margin-bottom: 6%;
+}
+
+.stroke{
+    color: white;
+    font-size: 150px;
+    -webkit-text-stroke: #a3371c1a 2px;
+    font-weight:900;
+    &:hover{
+
+        animation-name: ss;
+        animation-duration: 0.2s;
+        animation-timing-function: ease;
+        animation-fill-mode:forwards;
+
+        
+    }
+}
+
+@keyframes ss{
+    100%{
+        transform: translateY(10px);
+    }
+    
+}
+/*----------pal---------------*/
+.pal-details{
+    width:72%;
+}
+
+.bg-green{
+    background-color: rgb(207, 247, 227);
+}
+
+.btn-pal:hover{
+    background-color: transparent;
+    border: solid 1px ;
+    color: #198754;
+}
+/*----------shop by Department------------*/
+.shop-card img{
+   background-color: var(--bg-lightgray); 
+   width: 85%;
+   aspect-ratio: 1 / 1;
+   border-radius: 50%;
+}
+
+.shop-line{
+    &:hover{
+        border-color: var(--bg-red) !important;
+    }
+}
+
+.shop-card img:hover{
+    animation-name: shop;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 4;
+    animation-duration: 0.2s;
+    display: block;
+    animation-direction: alternate-reverse;
+   
+}
+
+@keyframes shop{
+    /*
+    0%{
+     margin-left: auto;
+    }
+    50%{
+     margin-right: auto;
+     margin-left: auto;
+    }
+    100%{
+     margin-right: auto;
+    }
+     */
+     0%{
+        transform: translateX(5px);
+     }
+     100%{
+        transform: translateX(-5px);
+     }
+
+}
+
+/*--------------brands-------------------*/
+
+
+.owl-carousel2 img:hover{
+    filter: grayscale(100%);
+}
+
+/*-------------footer---------------------*/
+footer{
+     background-color: var(--bg-lightgray);
+}
+
+footer input{
+    width:50%;
+    padding: 1% 2%;
+}
+
+.footer-ex{
+    margin-top: 32%;
 }
 
