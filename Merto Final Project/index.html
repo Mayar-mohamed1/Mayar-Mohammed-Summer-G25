@@ -15,12 +15,10 @@
 </head>
 <body>
   
-  <!----------header&navbar&navbar2&carousel----------->
-  <div class="position-relative ">
-  <!---------put the header on the top of navbar------>
-  <div class="position-relative position-absolute w-100 z-index-5">
+ 
+ 
     <!-------------------Header----------------------->
-    <header class="border-bottom border-2 position-absolute z-5">
+    <header class="border-bottom border-2  z-5" id="header">
       <div class="container ">
         <div class="row justify-content-between py-3 text-small fw-semibold">
           <!---------Header-left------------>
@@ -29,14 +27,14 @@
             <div class="d-flex">
              
              <div class="d-flex border-end border-2 position-relative">
-               <div class=" englishh">
+               <div class=" englishh ">
                 <a href="#" class="text-black nav-icon d-block w-100 ">
                 <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/english.png">
                 <span>English</span>
                 <i class="fa-solid fa-angle-down angle-icon"></i>
                 </a>
                 <!------moveeeeeeeeeeeeeee-->
-                <ul class="w-100  header-ul1 p-0 m-0 py-3 text-center shadow rounded d-none bg-white" id="ul1">
+                <ul class="w-100  header-ul1 p-0 m-0 py-3 text-center shadow rounded d-none bg-white position-absolute z-index-9999" id="ul1">
                   <li>
                     <a href="#" class="text-black nav-icon">
                       <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/espanol.png">
@@ -69,7 +67,7 @@
                 </a>
                 </div>
                 <!------moveeeeeeeeeeeeeee-->
-                <ul class="w-100 position-absolute header-ul1 p-0 m-0 py-4 text-center shadow rounded d-none  bg-white">
+                <ul class="w-100 position-absolute header-ul1 p-0 m-0 py-4 text-center shadow rounded d-none  bg-white z-index-9999">
                   <li>
                     <a href="#" class="text-black nav-icon">
                       <span>EUR</span>
@@ -97,7 +95,7 @@
                 </div>
 
                 <div class="mx-2">
-                   <a href="#" class="text-black nav-icon d-block w-100 ">
+                   <a href="contact.html" class="text-black nav-icon d-block w-100 ">
                      Contact
                    </a>
 
@@ -140,7 +138,7 @@
     </header>
 
     <!-------------------navbar----------------------->
-    <nav class="navbar pb-3 nav-pt bg-white ">
+    <nav class="navbar nav-pt bg-white  top-0 " id="navy">
       <div class="container pe-0 position-sticky top-0">
         <div class="row w-100 py-3 ">
          <!---------------------logo------------>
@@ -251,9 +249,10 @@
          </div>
       </div>
     </nav>
-    
+    <!---put navbar2 on carousel---------------------->
+    <div class="position-relative">
     <!--------------------navbar2-------------------->
-    <section class="nav2 bg-white">
+    <section class="nav2 bg-white position-absolute w-100 z-index-10">
       <div class="container ">
          <div class="row  ">
         <!-------shop menu------>
@@ -404,7 +403,7 @@
         </div>
       </div>
     </section>
-    </div>
+   
     <!--------------------carousel-------------------->
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
       <div class="carousel-indicators">
@@ -445,11 +444,11 @@
     </div>
   </div>
 
-</div>
+   </div>
     </div>
 
   <!----------button-uparrow--------------------------->
-  <a href="#header" id="up-arrow" class="bg-dark text-white rounded p-1 end-0 bottom-0 position-fixed mb-2 me-2">
+  <a href="#header" id="upArrow" class="bg-dark text-white rounded p-1 end-0 bottom-0 position-fixed mb-2 me-2 d-none">
     <i class="fa-solid fa-arrow-up"></i>
   </a>  
 
@@ -509,10 +508,9 @@
         </a>
       </div>
     <!--week-cards-->  
-   <div class="w-100 pt-4">
-      <div class="row flex-nowrap">
-          <div class="col p-0 position-relative">
-            <div class="card rounded-end-0 week-card-hov w-100">
+      <div class="owl-carousel pt-4 owl-carousel1">
+        <div>
+           <div class="card rounded-end-0 week-card-hov w-100">
               <div class="position-relative">
               
              <a href="#"><img src="images/clock.png" class="card-img-top" alt="..."></a>
@@ -550,10 +548,11 @@
                 <i class="fa-solid fa-star-half-stroke"></i>
                </div>
               </div>
-            </div>
-          </div>
-          <div class="col p-0 position-relative">
-            <div class="card rounded-0 week-card-hov w-100">
+           </div>
+        </div>
+
+        <div>
+          <div class="card rounded-0 week-card-hov w-100">
               <div class="position-relative">
               
              <a href="#"><img src="images/Chair.png" class="card-img-top" alt="..."></a>
@@ -591,10 +590,11 @@
                 <i class="fa-solid fa-star"></i>
                </div>
               </div>
-            </div>
-          </div>
-          <div class="col p-0 position-relative">
-            <div class="card rounded-end-0 week-card-hov w-100" >
+        </div>
+        </div>
+
+        <div>
+          <div class="card rounded-end-0 week-card-hov w-100" >
               <div class="position-relative">
               
              <a href="#"><img src="images/table.png" class="card-img-top" alt="..."></a>
@@ -632,9 +632,10 @@
                 <i class="fa-regular fa-star"></i>
                </div>
               </div>
-            </div>
           </div>
-          <div class="col p-0 position-relative">
+        </div>
+
+        <div>
             <div class="card rounded-0 week-card-hov w-100" >
               <div class="position-relative">
               
@@ -674,9 +675,10 @@
                </div>
               </div>
             </div>
-          </div>
-          <div class="col p-0 position-relative">
-            <div class="card rounded-start-0 week-card-hov w-100" >
+        </div>
+        
+        <div>
+          <div class="card rounded-start-0 week-card-hov w-100" >
               <div class="position-relative">
               
              <a href="#"><img src="images/lamp.png" class="card-img-top" alt="..."></a>
@@ -715,9 +717,14 @@
                </div>
               </div>
             </div>
-          </div>
         </div>
+        
       </div>
+
+
+
+
+
     </div>
   </section>
   <!-------------3 images------------------------------>
